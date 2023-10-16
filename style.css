@@ -2,17 +2,82 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition: all 2s;
 }
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+
+
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    animation: rettangolo;
+    animation-duration: 2s;
 }
+
+
+@keyframes rettangolo {
+    0%
+    {
+        width: 200px;
+    }
+    25% 
+    {
+        width: 400px;
+    }
+    50%
+    {
+        width: 600px;
+    }
+    75%
+    {
+        width: 800px;
+    }
+    100%
+    {
+        width: 1000px;
+    }
+}
+
+
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    animation: cerchio;
+    animation-duration: 4s;
 }
+
+@keyframes cerchio {
+    0%
+    {
+        border-radius: 15%;
+    }
+    25% 
+    {
+        border-radius: 25%;
+    }
+    50%
+    {
+        border-radius: 35%;
+    }
+    75%
+    {
+        border-radius: 45%;
+    }
+    100%
+    {
+        border-radius: 50%;
+    }
+}
+
+
+
+
 .ex-4-square {
     width: 100px;
     height: 100px;
